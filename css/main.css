@@ -1,0 +1,119 @@
+*{
+    padding: 0px;
+    margin: 0px;
+   box-sizing: border-box;
+   font-family: 'EB Garamond', serif;
+}
+body{
+    background-color: rgb(229, 206, 206);
+}
+header{
+    background-color:rgb(30, 130, 150) ;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+}
+header h1{
+    font-size: 30px;
+    font-weight: bold;
+    display: inline;
+    align-items: center;
+    background-color:rgb(30, 130, 150) ;
+    color: #fff;
+}
+header button{
+    background-color: rgb(59, 170, 59);
+    color:rgb(186, 209, 229);
+    padding: 6px;
+    margin: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 17px;
+   text-transform: uppercase;
+   border: none;
+}
+header button:hover{
+    background-color: rgb(108, 206, 108);
+    
+}
+form {
+    background-color:rgb(39, 143, 156) ;
+    padding: 8px;
+    text-align: center;
+    display: none;
+}
+form h2{
+    background-color:rgb(39, 143, 156) ;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline;
+    align-items: center;
+    color: #fff;
+  
+}
+form button{
+    color: black;
+    padding: 6px;
+    margin: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 17px;
+   text-transform: uppercase;
+   border: none;
+}
+form input{
+    padding: 5px;
+    border-radius: 15px;
+    border: none;
+    margin-left: 8px;
+   
+}
+
+.submit{
+    background-color: rgb(59, 170, 59);
+      color:rgb(186, 209, 229);
+}
+.cancelar{
+    background-color: rgb(172, 50, 50);
+      color:rgb(186, 209, 229);
+}
+.submit:hover{
+    background-color: rgb(108, 206, 108);
+}
+.cancelar:hover{
+    background-color: rgb(237, 73, 73);
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul li {
+    max-width: 25%;
+    list-style: none;
+    position: relative;
+    max-height: 380px;
+    overflow-y: hidden;
+}
+ul li img{
+    width: 100%;
+}
+.overlay-img{
+padding: 16px;
+background-color: rgba(0, 0, 0, 0.7);
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+opacity: 0;
+text-align: center;
+transition: all ease .5s;
+}
+.overlay-img a{
+    color: #fff;
+    text-decoration: none;
+  
+}
+ul li:hover .overlay-img{
+    opacity: 1;
+}
